@@ -1,0 +1,4 @@
+config: 
+  port: :50051  # grpc监听端口
+  socket: 10.112.42.129:2181  # 部署在nuc0上的zookeeper的IP+端口 
+  # 在部署到不同的nuc上时需要修改为对应的IP

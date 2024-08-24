@@ -1,0 +1,5 @@
+该项目中zk_server文件为主要内容，该文件夹实现了对zookeeper的读写服务，并且提供了grpc的监听端口，作为grpc服务端供其他模块调用
+
+其中zk_server文件夹中的config.yml文件为配置文件，需要视情况调整
+
+zk_server_client提供了一种用go语言撰写的grpc客户端，该客户端可以调用zk_server实现的服务端完成读写需求，如果想要调用zk_server实现的grpc服务端服务，且使用其他语言，请从pb文件夹下获取zkservice.proto文件，自己生成对应的代码，调用
